@@ -1,1 +1,1 @@
-"# Simple CLI tool to manage personal tasks" 
+# Simple CLI tool to manage personal tasks
