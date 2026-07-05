@@ -8,6 +8,6 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node --watch app.js add Praying before every thing"
+    "start" : "node --watch app.js update 1 Praying before  and after every thing"
   }
 }
