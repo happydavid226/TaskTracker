@@ -7,6 +7,7 @@ export async function loadTasks(){
         return tasks;
     } catch(err){
         console.log(`error reading data or parsing to json`, err);
+        return [];
     }
 }
 

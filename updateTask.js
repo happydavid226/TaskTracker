@@ -1,15 +1,11 @@
 import {loadTasks, writeTasks } from './fileOps.js'; 
-
-function taskExists(id, tasks){
-    for(const task of tasks){
-        if(task._id == id){
-            return true;
-        }
-    }
-    return false;
-}
+import { taskExists } from './utils.js';
 
 export async function updateTask(id, description){
+    id = Number(id);
+    if(isNaN(id)){
+        throw new Error("Id should be a number");
+    }
     if(typeof description === 'undefined' ||description.trim().length === 0){
         throw new Error("description is null, no update happened")
     }

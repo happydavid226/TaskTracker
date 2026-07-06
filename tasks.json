@@ -1,22 +1,22 @@
 [
   {
     "_id": 1,
-    "_description": "Praying before and after every thing",
-    "_status": "TO_DO",
+    "_description": "Praying before every thing",
+    "_status": "DOING",
     "_createdAt": "2026-07-04T21:42:12.095Z",
-    "_updatedAt": "2026-07-05T15:37:16.601Z"
+    "_updatedAt": "2026-07-04T21:42:12.096Z"
   },
   {
     "_id": 2,
     "_description": "Praying before every thing",
-    "_status": "TO_DO",
+    "_status": "DOING",
     "_createdAt": "2026-07-04T21:51:18.716Z",
     "_updatedAt": "2026-07-04T21:51:18.717Z"
   },
   {
     "_id": 3,
     "_description": "Praying before every thing",
-    "_status": "TO_DO",
+    "_status": "DOING",
     "_createdAt": "2026-07-04T21:51:23.937Z",
     "_updatedAt": "2026-07-04T21:51:23.938Z"
   },
@@ -149,7 +149,7 @@
   {
     "_id": 22,
     "_description": "Praying before every thing",
-    "_status": "TO_DO",
+    "_status": "DOING",
     "_createdAt": "2026-07-05T15:07:47.020Z",
     "_updatedAt": "2026-07-05T15:07:47.021Z"
   }

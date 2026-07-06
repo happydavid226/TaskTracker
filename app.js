@@ -1,13 +1,14 @@
-import { updateTask } from "./updateTask.js";
+import { markInProgress } from "./markInProgress.js";
+
 async function main(){
     let args = process.argv;
     console.log(args);
-    if(!args || args.length < 4){
-        console.log(`There must be at least 2 arguments`);
+    if(!args || args.length != 4){
+        console.log(`There must be only 2 arguments. the last argument should be an integer`);
         return;
     }
-    if(args[2].toLowerCase() != 'update'){
-        console.log("The command should be add");
+    if(args[2].toLowerCase() != 'mark-in-progress'){
+        console.log("The command should be mark-in-progress <id>");
         return;
     }
     args.splice(0,3);
@@ -16,12 +17,11 @@ async function main(){
         console.log(`id should be a number`);
         return;
     }
-    const description = args.join(" ");
-    const data = await updateTask(id, description);
-    if(!data){
-        console.error(`Error updating task`);
+    const data = await markInProgress(id);
+    if(typeof data === 'undefined' || data.length === 0){
+        console.error(`no thing was updated`);
     } else {
-        console.log(`STATUS CODE : 201, updated : \n`, data);
+        console.log(`STATUS CODE : 200,  deleted : \n`, data);
     }
 }
 
