@@ -1,11 +1,9 @@
 import {loadTasks, writeTasks } from './fileOps.js'; 
 import { taskExists } from './utils.js';
+import { checkId } from "./validation.js";
 
-export async function updateTask(id, description){
-    id = Number(id);
-    if(isNaN(id)){
-        throw new Error("Id should be a number");
-    }
+export default async function updateTask(id, description){
+    id = checkId(id);
     if(typeof description === 'undefined' ||description.trim().length === 0){
         throw new Error("description is null, no update happened")
     }

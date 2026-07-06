@@ -6,7 +6,8 @@ export async function loadTasks(){
         const tasks = JSON.parse(tasksString);
         return tasks;
     } catch(err){
-        console.log(`error reading data or parsing to json`, err);
+        console.log(`error reading data or parsing to json ${err.message}\ntry again once`);
+        await writeTasks([]);
         return [];
     }
 }

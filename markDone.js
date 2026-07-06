@@ -1,11 +1,9 @@
 import { loadTasks, writeTasks } from "./fileOps.js";
 import { taskExists } from "./utils.js";
+import { checkId } from "./validation.js";
 
-export async function markDone(id){
-    id = Number(id);
-    if(typeof id !== 'number'){
-        throw new Error('id must be a number');
-    }
+export default async function markDone(id){
+    id = checkId(id);
     let tasks = await loadTasks();
     if(!taskExists(id, tasks)){
         throw new Error('task does not exist');
