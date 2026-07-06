@@ -2,14 +2,14 @@
   {
     "_id": 1,
     "_description": "Praying before every thing",
-    "_status": "DOING",
+    "_status": "DONE",
     "_createdAt": "2026-07-04T21:42:12.095Z",
     "_updatedAt": "2026-07-04T21:42:12.096Z"
   },
   {
     "_id": 2,
     "_description": "Praying before every thing",
-    "_status": "DOING",
+    "_status": "DONE",
     "_createdAt": "2026-07-04T21:51:18.716Z",
     "_updatedAt": "2026-07-04T21:51:18.717Z"
   },
@@ -65,7 +65,7 @@
   {
     "_id": 10,
     "_description": "Praying before every thing",
-    "_status": "TO_DO",
+    "_status": "DONE",
     "_createdAt": "2026-07-04T21:52:39.173Z",
     "_updatedAt": "2026-07-04T21:52:39.173Z"
   },
